@@ -1,6 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.TaskManager = void 0;
+exports.TaskManager = exports.MongoDB = void 0;
+var mongodb_1 = require("./connectors/mongodb");
+Object.defineProperty(exports, "MongoDB", { enumerable: true, get: function () { return mongodb_1.MongoDB; } });
 class TaskManager {
     constructor(db) {
         this.db = db;

@@ -1,3 +1,4 @@
+export { MongoDB } from './connectors/mongodb';
 export interface Task {
     id: string;
     title: string;
